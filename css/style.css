@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: linear-gradient(to right bottom, #e81d42, #320041) no-repeat;
+}
+
+body {
+  width: 100%;
+  min-width: max-content;
+  height: 100%;
+}
+
+#container_main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container_welcome {
+  position: relative;
+  width: 55vw;
+  max-width: 55vw;
+  min-width: 55vw;
+  /* visibility: hidden; */
+}
+
+#container_welcome {
+    
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  content: "";
+  margin: 2rem auto 4rem;
+  height: 90%;
+  min-height: 90%;
+  z-index: 2;
+  background: linear-gradient(to right, #814de1, #d485d7);
+  border-radius: 50px;
+  border: 10px solid rgb(102, 8, 185);
+  padding: 6rem 0;
+}
+#container_welcome ul li {
+    width: 50vw;
+    min-width: 50%;
+}
+.start-game_title {
+    margin: 20vh auto 5vh;
+    text-align: center;
+}
+#target-score {
+    width:100%;
+    height: 4vh;
+    line-height: 2rem;
+    padding:.2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 4vh auto 1vh;
+    border-radius: 25px;
+}
+button {
+       width:100%;
+    padding:.2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: #fde1febb;
+    border: none;
+}
+.container_player{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container_player1 {
+  /* position: relative; */
+  /* margin-left: 0; */
+  background: hsl(313, 78%, 86%);
+  height: 100vh;
+  width: 30vw;
+  min-width: 30vw;
+  /* margin-left: 500px; */
+  min-width: 30vw;
+  display: flex;
+  /* #container_player1:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: 0;*/
+}
+#container_player2 {
+    display: flex;
+  position: relative;
+  background: #b96bfc;
+  /* margin-right: 500px; */
+  width: 30vw;
+  min-width: 30vw;
+  height: 100vh;
+}
+/* #container_player2:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 0;
+} */
+
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button,
+section {
+  border: 1px red solid;
+}
