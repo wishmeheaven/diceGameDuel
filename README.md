@@ -21,7 +21,13 @@ Suddenly, didn't work.
 I gave up. 
 I was bitten once again by technical issues which I wasn't
 Brilliant (or at least experience) enough to fix.
-I'm far from being the web developer that I wish I was in that point.
+And it's not only the css -
+My engine wasn't clean enough to watch it in progress.
+My main lessons: 
+1. Make the code work first without a visual engine.
+2. Getting better at organized my code.
+3. Getting better at css.
+I'm far from being at I level and skill that wish I was at that point in time.
 It's very disappointing, which is why I called this project: DICEappointment.
 
 
