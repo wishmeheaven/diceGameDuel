@@ -6,99 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Weekend Assignment - Dice Game Duel" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0245c45241.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app/app.js" defer></script>
     <title>Dice Game Duel</title>
   </head>
   <body>
     <div id="container_main">
-    <div id="container_welcome">
-      <section class="section_rules">
-        <h2 class="rules lead">Game Instructions</h2>
-        <ul class="section_rules_ul">
-          The game has 2 players, playing in rounds
-          <li>
-            In each turn, a player rolls a dice as many times as he whishes.
-            Each result get added to his ROUND score
-          </li>
-          <li>
-            BUT, if the player rolls double sixes, all his ROUND's score gets
-            lost. After that, it's the next player's turn
-          </li>
-          <li>
-            The player can choose to 'Hold', which means that his ROUND score
-            gets added to his GLOBAL score. After that, it's the next player's
-            turn
-          </li>
-          <li>
-            The winner determined based on EITHER of the following conditions:
-          </li>
-          <li>First player to reach the EXACT target score wins the game</li>
-          <li>
-            If a player pass the target score - he lose, and the victory goes to
-            the other player
-          </li>
-        </ul>
-      </section>
-      <section class="section_start">
-        <h2 class="start-game_title">Please select a target score</h2>
-        <input type="number" id="target-score" placeholder="Target Score" />
-        <button class="start-game-btn">Start Game</button>
-      </section>
-    </div>
-
-    <div id="container_player1">
-          <h1 id="player_name">Player 1</h1>
-        <div class="container_global_score">
-          <h2 id="global_score">0</h2>
+      <section id="container_welcome">
+        <div id="container_rules">
+          <h2 class="rules lead">Game Instructions</h2>
+          <ul class="section_rules_ul">
+            <li>The game has 2 players, playing in rounds</li>
+            <li>
+              In each turn, a player rolls a dice as many times as he whishes.
+              Each result get added to his ROUND score
+            </li>
+            <li>
+              BUT, if the player rolls double sixes, all his ROUND's score gets
+              lost. After that, it's the next player's turn
+            </li>
+            <li>
+              The player can choose to 'Hold', which means that his ROUND score
+              gets added to his GLOBAL score. After that, it's the next player's
+              turn
+            </li>
+            <li>
+              THE WINNER determined based on EITHER of the following conditions:
+            </li>
+            <li>First player to reach the EXACT target score wins the game</li>
+            <li>
+              If a player pass the target score - he lose, and the victory goes
+              to the other player
+            </li>
+          </ul>
         </div>
-        <div id="win-or-lose">
-          <h2 id="win-or-lose_result"></h2>
-        </div>
-        <div class="container_round_score">
-          <h3>current</h3>
-          <h2 id="round_score">0</h2>
-        </div>-->
-                </div>
 
+        <section id="section_start">
+          <h2 class="start-game_title">Please select below a target score</h2>
+          <input
+            type="number"
+            id="target-score"
+            placeholder="first player who gets... wins"
+          />
+          <button id="btn-start-game">Start Game</button>
+        </section>
+      </section>
+
+      <section id="game-section">
+        <div id="container_player1">
+          <div class="container_global_score">
+            <h1 id="player1-name active">PLAYER 1</h1>
+            <h2 id="player1-main-score">0</h2>
+          </div>
+          <div class="container_round_score">
+            <div class="win-or-lose">
+              <h2 id="win-or-lose_state">Passed the target score</h2>
+            </div>
+            <div class="box_round_score">
+              <h3>CURRENT</h3>
+              <h2 class="player-round-score">0</h2>
+            </div>
+          </div>
+        </div>
         <div id="container_player2">
-          <h1 id="player_name">Player 2</h1>
-        <div class="container_global_score">
-          <h2 id="global_score">0</h2>
+          <div class="container_global_score">
+            <h1 id="player2-name">PLAYER 2</h1>
+            <h2 id="player2-main-score">0</h2>
+          </div>
+          <div class="container_round_score">
+            <div class="win-or-lose">
+              <h2 id="message_state">You Win!</h2>
+            </div>
+            <div class="box_round_score">
+              <h3>CURRENT</h3>
+              <h2 class="player-round-score">0</h2>
+            </div>
+          </div>
         </div>
-        <div id="win-or-lose">
-          <h2 id="win-or-lose_result"></h2>
+      </section>
+
+      <section id="section_floating">
+        <div class="container_floating">
+          <button id="btn_new-game">
+            <i id="icon-new_game"  class="fas fa-rotate"></i>
+            NEW GAME
+          </button>
+          <div class="die">
+            <img
+              id="img_dice-a"
+              src="./assets/images/dice-6.png"
+              alt="dice1"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="die">
+            <img
+              id="img_dice-b"
+              src="./assets/images/dice-6.png"
+              alt="dice2"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <button id="btn-roll_dice">
+            <i id="icon-roll_dice" class="fas fa-dice"></i>
+            Roll Dice
+          </button>
+          <button id="btn-hold">
+            <i id="icon-hold"  class="fas fa-shield-halved"></i>
+            HOLD
+          </button>
         </div>
-        <div class="container_round_score">
-          <h3>current</h3>
-          <h2 id="round_score">0</h2>
-        </div>
-              </div>
-              
-    </div>
-<!--
-    <section class="section_floating">
-      <div class="container">
-        <button id="btn-new_game">
-          <i id="icon-new_game" class="fas fa-redo-alt"></i>
-          NEW GAME
-        </button>
-        <div class="dice-a">
-          <img id="img_dice-a" src="./assets/images/dice-6.png" alt="dice1" width="50px" height="50px" />
-        </div>
-        <div class="dice-b">
-          <img id="img_dice-b" src="./assets/images/dice-6.png" alt="dice2" width="50px" height="50px" />
-        </div>
-        <button id="btn-roll_dice">
-          <i id="icon-roll_dice" class="fas fa-dice"></i>
-          Roll Dice
-        </button>
-        <button id="btn-hold">
-          <i id="icon-hold" class="fas fa-hand-paper"></i>
-          HOLD
-        </button>
-      </div>
-    </section>
-    -->
+      </section>
     </div>
   </body>
 </html>
