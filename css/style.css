@@ -273,9 +273,16 @@ font-size: 14px;
     height: max-content;
     margin: 10rem;
 }
+#section_start button{
+    background-color: #2abba3;
 
-#section_start:hover{
-  background-color: #2abba3;
+}
+#btn-start-game:hover{
+  background-color: #18a18a;
+  border: 2px solid #2abba3;
+}
+#btn-start-game:active{
+  background-color: #3de9cd;
   border: 2px solid #2abba3;
 }
 

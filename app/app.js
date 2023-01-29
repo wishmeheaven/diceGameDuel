@@ -191,7 +191,7 @@ function setVisibility(UIElement) {
     }
 }
 
-while (!game.isEndGame) {
+// while (!game.isEndGame) {
     console.log("in while")
 
     init()
@@ -215,10 +215,9 @@ while (!game.isEndGame) {
         // checkWinner()
         player.score >= game.targetScore ? player.isWinner = true : player.isWinner = false
         // triggerEventMsg()
-        break;
-
+        // break;
     }
-}
+// }
 
 console.log("OUT while")
 
